@@ -1,0 +1,5 @@
+
+    <input type="text" [(ngModel)]="searchText">
+
+
+<app-home-detail [homes]="data | search:searchText" (saveclicked)=onclick($event)></app-home-detail>
